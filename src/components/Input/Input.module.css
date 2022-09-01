@@ -1,0 +1,29 @@
+section {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  margin: -1.5rem 22rem;
+
+}
+
+.input {
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 39.875rem;
+  height: 54px;
+
+  background: var(--gray-500);
+  color: var(--gray-100);
+
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  outline: none;
+}
+
+.input:focus {
+  border: 1px solid var(--lime-100);
+}
