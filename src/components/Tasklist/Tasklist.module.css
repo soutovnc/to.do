@@ -1,0 +1,10 @@
+
+header {
+  display: flex;
+
+  padding-top: 5rem;
+
+  width: 46rem;
+  height: 1rem;
+  justify-content: space-between;
+}

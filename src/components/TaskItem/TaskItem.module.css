@@ -1,0 +1,110 @@
+li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  background: var(--gray-400);
+  padding: 1rem;
+  height: 4.5rem;
+}
+
+li.done {
+  background: var(--green-finish);
+}
+
+li p {
+  display: block;
+  flex: 1;
+  text-align: start;
+  font-weight: bold;
+}
+
+.checkbox {
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.checkbox input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.checkbox label {
+  position: relative;
+  padding-left: 2.2rem;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.checkbox label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: solid 2px var(--cian-100);
+  background: transparent;
+  margin-right: 0.5rem;
+  transition: all 0.2s ease;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50);
+}
+
+.checkbox label::after {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 0.9rem;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  color: var(--gray-100);
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.checkbox label:focus::before, 
+.checkbox label:hover::before {
+  background: var(--gray-300);
+}
+
+.checkbox input:checked + label::before {
+  background: var(--lime-500);
+  border-color: var(--lime-500);
+}
+
+.checkbox input:checked + label.text {
+  text-decoration: line-through;
+}
+
+.checkbox input:checked + label:hover::before {
+  background: var(--lime-100);
+  border-color: var(--lime-100);
+  text-decoration: line-through;
+}
+
+.checkbox input:checked + label::after {
+  opacity: 1;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--gray-100);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  color: var(--red-500);
+}

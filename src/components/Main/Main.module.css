@@ -1,0 +1,62 @@
+.container {
+  margin: -1.75rem auto;
+  width: 100%;
+  max-width: 64rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+
+
+.toDoList {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.toDoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  line-height: 1rem;
+}
+
+.totalTasks {
+  color: var(--cian-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.totalTasks span {
+  display: block;
+  margin-left: 1rem;
+  padding: 0.5rem;
+
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 6px;
+  background: var(--gray-300);
+  color: var(--gray-100);
+}
+
+.doneTasks {
+  color: var(--lime-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doneTasks span {
+  display: block;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 6px;
+  background: var(--gray-300);
+  color: var(--gray-100);
+}

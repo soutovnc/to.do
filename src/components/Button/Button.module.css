@@ -13,3 +13,7 @@
   width: 90px;
   height: 52px;
 }
+
+.button[disabled]:hover {
+  background-color: var(--gray-300);
+}
