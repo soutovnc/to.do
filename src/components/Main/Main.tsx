@@ -17,7 +17,9 @@ export const Main = () => {
 
   return (
     <div className={styles.container}>
-      <form>
+      <form
+        
+      >
         <Input />
         
       </form>
