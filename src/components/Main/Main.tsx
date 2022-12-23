@@ -18,10 +18,10 @@ export const Main = () => {
   return (
     <div className={styles.container}>
       <form
-        
+
       >
         <Input />
-        
+
       </form>
       <div className={styles.toDoList}>
         <div className={styles.toDoHeader}>
@@ -31,7 +31,8 @@ export const Main = () => {
           </div>
           <div className={styles.doneTasks}>
             Concluídas
-            <span>{`${doneTasks} de ${totalTasks}`}</span>
+            {/* <span>{`${doneTasks} de ${totalTasks}`}</span> */}
+            <span>{doneTasks} de {totalTasks}</span>
           </div>
         </div>
       </div>
